@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=7">
@@ -9,7 +9,105 @@
 		<meta name="author" content="Stefan Gajić">
         <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="./css/output.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;700&family=Nunito:wght@300;400;700;900&display=swap" rel="stylesheet">
 		<title>Travel | Explore The World!</title>
 	</head>
-	<body class="debug-screens"></body>
+	<body class="debug-screens bg-blue-400">
+		<!-- Hero section -->
+		<div id="hero">
+			<!-- <div id="hero-nav" class="py-4 fixed top-0 left-0 right-0 transition-all z-40">
+				<div class="container flex items-center justify-between">
+					<div id="hero-nav-logo">
+						<a href="#hero" class="logo text-333333">TRAVEL</a>
+					</div>
+					<div id="hero-nav-menu" class="bg-white flex items-center lg:w-136.25 lg:justify-between lg:relative absolute top-0 left-0 h-screen lg:flex-row flex-col justify-around z-50 w-0 lg:h-max lg:bg-opacity-0 overflow-hidden shadow-menu-shadow lg:shadow-none transition-all">
+						<div id="hero-nav-menu-logo" class="w-10 lg:hidden">
+							<img src="./resources/images/01_hero/hero_logo.png" alt="hero-logo">
+						</div>
+						<div class="hero-nav-menu-link">
+							<a href="#tours" class="hero-nav-menu-link-el">Tours</a>
+						</div>
+						<div class="hero-nav-menu-link">
+							<a href="#destinations" class="hero-nav-menu-link-el">Destinations</a>
+						</div>
+						<div class="hero-nav-menu-link">
+							<a href="#reviews" class="hero-nav-menu-link-el">Reviews</a>
+						</div>
+						<div class="hero-nav-menu-link">
+							<a href="#blog" class="hero-nav-menu-link-el">Blog</a>
+						</div>
+						<div class="hero-nav-menu-link">
+							<a href="#footer" class="hero-nav-menu-link-el">Contact</a>
+						</div>
+					</div>
+					<div id="hero-nav-side" class="flex gap-2">
+						<div id="hero-nav-side-burger" class="w-12 h-12 lg:hidden flex-col items-center justify-center border border-solid border-d8d8d8 rounded-full cursor-pointer hover:border-333333 hover:bg-333333 transition-all flex">
+							<div class="hero-nav-side-burger-line"></div>
+							<div class="hero-nav-side-burger-line mt-0.75"></div>
+							<div class="hero-nav-side-burger-line mt-0.75"></div>
+						</div>
+						<div id="hero-nav-side-account" class="w-max relative cursor-pointer hover:translate-y-1 transition-all">
+							<div id="hero-nav-side-account-user" class="rounded-full overflow-hidden shadow-account-shadow">
+								<img src="./resources/images/01_hero/hero_user.png" alt="hero-user">
+							</div>
+							<div id="hero-nav-side-account-notifications" class="w-4 h-4 font-nunito font-black text-11 text-white flex items-center justify-center rounded-full absolute -top-0.5 bg-e64d47 left-8.5">3</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<div id="hero-content">
+				<div class="container">
+					<div id="hero-content-heading">Find Your Tour</div>
+					<div id="hero-content-subheading" class="bg-green-500">Travel across the world.</div>
+				</div>
+				<div id="hero-content-book" class="bg-red-500 py-1 border-4 border-solid border-333333 xl:max-w-296.5 mx-auto">
+					<div class="container xl:px-0 bg-red-100">
+						<div id="hero-content-book-wrapper" class="bg-white px-7.5 lg:px-8 flex lg:justify-between xl:justify-start lg:items-end lg:py-8 flex-col lg:flex-row pt-9 pb-12">
+							<div id="hero-content-book-wrapper-destination" class="xl:basis-79.5">
+								<div id="hero-content-book-wrapper-destination-heading" class="form-heading">WHERE</div>
+								<div id="hero-content-book-wrapper-destination-input" class="relative">
+									<div id="hero-content-book-wrapper-destination-input-field" class="input-field-wrapper">
+										<input type="text" placeholder="Destination">
+									</div>
+									<div id="hero-content-book-wrapper-destination-input-icon" class="input-field-img">
+										<img src="./resources/images/01_hero/hero_destination.svg" alt="hero-destination">
+									</div>
+								</div>
+							</div>
+							<div id="hero-content-book-wrapper-date" class="xl:basis-79.5 xl:ml-7.5 mt-5 lg:mt-0">
+								<div id="hero-content-book-wrapper-date-heading" class="form-heading">WHEN</div>
+								<div id="hero-content-book-wrapper-date-input" class="relative">
+									<div id="hero-content-book-wrapper-date-input-field" class="input-field-wrapper">
+										<input type="text" placeholder="Date">
+									</div>
+									<div id="hero-content-book-wrapper-date-input-icon" class="input-field-img">
+										<img src="./resources/images/01_hero/hero_date.svg" alt="hero-date">
+									</div>
+								</div>
+							</div>
+							<div id="hero-content-book-wrapper-side" class="xl:ml-7.5 flex lg:items-end lg:gap-7 lg:basis-102.5 bg-blue-400 sm:justify-between lg:justify-start gap-6 mt-5 lg:mt-0">
+								<div id="hero-content-book-wrapper-side-type" class="basis-47.5 sm:basis-3/5 lg:basis-75.5">
+									<div id="hero-content-book-wrapper-side-type-heading" class="form-heading">TOUR TYPE</div>
+									<div id="hero-content-book-wrapper-side-type-input" class="relative">
+										<div id="hero-content-book-wrapper-side-type-input-field" class="input-field-wrapper">
+											<input type="text" placeholder="Type">
+										</div>
+										<div id="hero-content-book-wrapper-side-type-input-icon" class="input-field-img">
+											<img src="./resources/images/01_hero/hero_type.svg" alt="hero-type">
+										</div>
+									</div>
+								</div>
+								<div id="hero-content-book-wrapper-side-search" class="w-20 h-20 bg-55a85a flex items-center justify-center cursor-pointer rounded-full hover:scale-105 transition-all -mr-2 -mb-4 sm:mr-0 sm:mb-0">
+									<img src="./resources/images/01_hero/hero_search.svg" alt="hero-search">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/script.js"></script>
+	</body>
 </html>
