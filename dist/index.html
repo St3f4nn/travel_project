@@ -14,7 +14,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;700&family=Nunito:wght@300;400;700;900&display=swap" rel="stylesheet">
 		<title>Travel | Explore The World!</title>
 	</head>
-	<body class="debug-screens">
+	<body class="overflow-x-hidden debug-screens">
 		<!-- Hero section -->
 		<div id="hero" class="pb-12 bg-fixed bg-center bg-no-repeat bg-cover" style="background-image: url('./resources/images/01_hero/hero_background.svg');">
 			<div id="hero-nav" class="fixed top-0 left-0 right-0 z-40 py-4 transition-all">
@@ -112,6 +112,67 @@
 					<a href="#popular" id="hero-content-arr" class="px-4.5 pb-4.5 pt-5.5 border border-solid border-black border-opacity-20 rounded-full mt-10 inline-block hover:translate-y-3 transition-all">
 						<img src="./resources/images/01_hero/hero_arr.svg" alt="hero-arr-down">
 					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Popular -->
+		<div id="popular" class="py-20 overflow-x-hidden sm:py-40 bg-f5f7f5">
+			<div class="container relative">
+				<div id="popular-main" class="flex flex-col items-center lg:justify-between lg:flex-row sm:items-start">
+					<div id="popular-main-card" class="max-w-71.5  sm:max-w-142.5 relative bg-f5f7f5 flex-shrink-0 z-10 rounded-xl">
+						<div id="popular-main-card-img" class="shadow-card-shadow rounded-xl">
+							<img src="./resources/images/02_popular/popular_main_img.png" alt="popular-main-img">
+						</div>
+						<div id="popular-main-card-header" class="absolute left-0 right-0 flex items-center justify-between px-8 top-8">
+							<div id="popular-main-card-header-location" class="flex items-center gap-3">
+								<div id="popular-main-card-header-location-icon">
+									<img src="./resources/images/02_popular/popular_location_icon.svg" alt="popular-location">
+								</div>
+								<div id="popular-main-card-header-location-text" class="text-xl font-light leading-8 text-white font-nunito">Tokyo</div>
+							</div>
+							<div id="popular-main-card-header-like" class="bg-e64d47 w-max px-3.75 pb-4.25 pt-3.25 cursor-pointer hover:bg-cc2b25 hover:scale-110 rounded-full transition-all">
+								<img src="./resources/images/02_popular/popular_like.svg" alt="popular-like">
+							</div>
+						</div>
+						<div id="popular-main-card-rating" class="absolute left-0 right-0 flex items-center gap-4 px-8 bottom-10">
+							<div id="popular-main-card-rating-stars" class="flex items-center gap-1.5">
+								<div class="popular-main-card-rating-stars-red">
+									<img src="./resources/images/02_popular/popular_star_red.svg" alt="popular-star-red">
+								</div>
+								<div class="popular-main-card-rating-stars-red">
+									<img src="./resources/images/02_popular/popular_star_red.svg" alt="popular-star-red">
+								</div>
+								<div class="popular-main-card-rating-stars-red">
+									<img src="./resources/images/02_popular/popular_star_red.svg" alt="popular-star-red">
+								</div>
+								<div class="popular-main-card-rating-stars-red">
+									<img src="./resources/images/02_popular/popular_star_red.svg" alt="popular-star-red">
+								</div>
+								<div class="popular-main-card-rating-stars-gray">
+									<img src="./resources/images/02_popular/popular_star_gray.svg" alt="popular-star-gray">
+								</div>
+							</div>
+							<div id="popular-main-card-rating-text" class="font-nunito font-light text-xl leading-8 text-white opacity-50.3 cursor-pointer hover:opacity-100 transition-all">7 reviews</div>
+						</div>
+					</div>
+					<div id="popular-main-content" class="pt-11.5 lg:pt-21.75 lg:pl-8 xl:pl-0 relative z-0">
+						<div id="popular-main-content-preheading" class="text-2xl font-light font-big-shoulders-display text-e64d47">POPULAR TOUR</div>
+						<div id="popular-main-content-heading" class="font-big-shoulders-display font-bold sm:text-56 sm:leading-16 text-333333 text-40 leading-12 mt-4.5 sm:mt-4.75 lg:max-w-79.25 sm:max-w-max max-w-56.75">The Five Biggest Cities In China</div>
+						<div id="popular-main-content-text" class="mt-4 sm:mt-7.75 font-nunito font-light text-xl leading-8 text-333333 lg:max-w-117.5">A peep at some distant orb has power to raise and purify our thoughts like a strain of sacred music, or a noble picture, or a passage from the grander poets.</div>
+						<div id="popular-main-content-bottom" class="mt-5.75 sm:mt-9.75 flex gap-7.5">
+							<div id="popular-main-content-bottom-btn" class="py-3 text-lg font-bold leading-6 text-white bg-55a85a w-max font-nunito rounded-7 pl-9.625 pr-9.875 hover:bg-green-800 cursor-pointer transition-all">From $315</div>
+							<div id="popular-main-content-bottom-days" class="font-nunito font-light text-xl leading-8 sm:text-555555 text-333333 opacity-50.16 sm:opacity-100 mt-2.25">5 days</div>
+						</div>
+						<div id="popular-main-content-circles" class="absolute lg:top-15.5 lg:left-59.25 -z-10 top-8 left-42.5">
+							<img src="./resources/images/02_popular/popular_circles.png" alt="popular-circles">
+						</div>
+					</div>
+				</div>
+				<div id="popular-side-left" class="absolute overflow-hidden lg:-translate-y-1/2 lg:top-1/2 top-0 sm:-left-75.5 rounded-7 w-max sm:h-auto h-70.25 -left-64 z-0">
+					<img src="./resources/images/02_popular/popular_side_img_left.jpg" alt="popular-side-left">
+				</div>
+				<div id="popular-side-right" class="absolute overflow-hidden lg:-translate-y-1/2 lg:-right-166.5 xl:-right-184.25 rounded-7 w-max lg:top-1/2 top-0 sm:left-154 sm:h-auto h-70.25 lg:left-auto -right-155.25">
+					<img src="./resources/images/02_popular/popular_side_img_right.jpg" alt="popular-side-right">
 				</div>
 			</div>
 		</div>
