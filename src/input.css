@@ -8,11 +8,11 @@
     }
 
     .logo {
-        @apply font-big-shoulders-display font-bold text-40 leading-12;
+        @apply font-bold font-big-shoulders-display text-40 leading-12;
     }
 
     .hero-nav-menu-link-el {
-        @apply font-nunito font-light text-base sm:text-xl sm:leading-8 text-333333 hover:text-black transition-all;
+        @apply text-base font-light transition-all font-nunito sm:text-xl sm:leading-8 text-333333 hover:text-black;
     }
 
     .hero-nav-side-burger-line {
@@ -20,7 +20,7 @@
     }
 
     .form-heading {
-        @apply font-nunito font-bold text-xs text-333333 bg-red-500;
+        @apply text-xs font-bold font-nunito text-333333;
     }
 
     .input-field-wrapper {
@@ -34,10 +34,6 @@
     .input-field-img {
         @apply bg-white w-10.5 h-10.5 flex items-center justify-center absolute top-1/2 -translate-y-1/2 right-0.25 rounded-7;
     }
-}
-
-body {
-    height: 5000px;
 }
 
 #hero-nav.onscroll {

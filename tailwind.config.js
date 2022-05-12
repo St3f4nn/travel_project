@@ -19,9 +19,14 @@ module.exports = {
         0.25: '1px',
         0.5: '2px',
         0.75: '3px',
+        1.5: '6px',
         3.5: '14px',
+        4.5: '18px',
+        5.5: '22px',
         7.5: '30px',
-        8.5: '34px'
+        8.5: '34px',
+        58.5: '234px',
+        107: '428px',
       },
       fontFamily: {
         'big-shoulders-display': "'Big Shoulders Display', cursive",
@@ -29,10 +34,14 @@ module.exports = {
       },
       fontSize: {
         '11': '11px',
-        '40': '40px'
+        '40': '40px',
+        '56': '56px',
+        '72': '72px'
       },
       lineHeight: {
-        12: '48px'
+        12: '48px',
+        16: '64px',
+        20: '80px'
       },
       colors: {
         '333333': '#333333',
@@ -54,16 +63,15 @@ module.exports = {
         'menu-shadow': '-3px 0px 15px 0px #000000'
       },
       borderRadius: {
-        '7': '7px'
+        '7': '7px',
+        '22': '22px',
+        '30': '30px'
       },
       flexBasis: {
         47.5: '190px',
         75.5: '302px',
         79.5: '318px',
         102.5: '410px'
-      },
-      maxWidth: {
-        296.5: '1186px'
       }
     },
   },

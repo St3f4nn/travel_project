@@ -14,10 +14,10 @@
 		<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;700&family=Nunito:wght@300;400;700;900&display=swap" rel="stylesheet">
 		<title>Travel | Explore The World!</title>
 	</head>
-	<body class="debug-screens bg-blue-400">
+	<body class="debug-screens">
 		<!-- Hero section -->
-		<div id="hero">
-			<!-- <div id="hero-nav" class="py-4 fixed top-0 left-0 right-0 transition-all z-40">
+		<div id="hero" class="pb-12 bg-fixed bg-center bg-no-repeat bg-cover" style="background-image: url('./resources/images/01_hero/hero_background.svg');">
+			<div id="hero-nav" class="fixed top-0 left-0 right-0 z-40 py-4 transition-all">
 				<div class="container flex items-center justify-between">
 					<div id="hero-nav-logo">
 						<a href="#hero" class="logo text-333333">TRAVEL</a>
@@ -43,68 +43,75 @@
 						</div>
 					</div>
 					<div id="hero-nav-side" class="flex gap-2">
-						<div id="hero-nav-side-burger" class="w-12 h-12 lg:hidden flex-col items-center justify-center border border-solid border-d8d8d8 rounded-full cursor-pointer hover:border-333333 hover:bg-333333 transition-all flex">
+						<div id="hero-nav-side-burger" class="flex flex-col items-center justify-center w-12 h-12 transition-all border border-black border-solid rounded-full cursor-pointer lg:hidden border-opacity-20 hover:border-333333 hover:bg-333333 hover:border-opacity-10">
 							<div class="hero-nav-side-burger-line"></div>
 							<div class="hero-nav-side-burger-line mt-0.75"></div>
 							<div class="hero-nav-side-burger-line mt-0.75"></div>
 						</div>
-						<div id="hero-nav-side-account" class="w-max relative cursor-pointer hover:translate-y-1 transition-all">
-							<div id="hero-nav-side-account-user" class="rounded-full overflow-hidden shadow-account-shadow">
+						<div id="hero-nav-side-account" class="relative transition-all cursor-pointer w-max hover:translate-y-1">
+							<div id="hero-nav-side-account-user" class="overflow-hidden rounded-full shadow-account-shadow">
 								<img src="./resources/images/01_hero/hero_user.png" alt="hero-user">
 							</div>
 							<div id="hero-nav-side-account-notifications" class="w-4 h-4 font-nunito font-black text-11 text-white flex items-center justify-center rounded-full absolute -top-0.5 bg-e64d47 left-8.5">3</div>
 						</div>
 					</div>
 				</div>
-			</div> -->
-			<div id="hero-content">
+			</div>
+			<div id="hero-content" class="sm:pt-107 pt-58.5">
 				<div class="container">
-					<div id="hero-content-heading">Find Your Tour</div>
-					<div id="hero-content-subheading" class="bg-green-500">Travel across the world.</div>
+					<div id="hero-content-heading" class="font-bold font-big-shoulders-display text-56 leading-16 sm:text-72 sm:leading-20 text-333333">Find Your Tour</div>
+					<div id="hero-content-subheading" class="text-2xl font-light font-nunito text-333333 sm:mt-3 mt-3.5">Travel across the world.</div>
 				</div>
-				<div id="hero-content-book" class="bg-red-500 py-1 border-4 border-solid border-333333 xl:max-w-296.5 mx-auto">
-					<div class="container xl:px-0 bg-red-100">
-						<div id="hero-content-book-wrapper" class="bg-white px-7.5 lg:px-8 flex lg:justify-between xl:justify-start lg:items-end lg:py-8 flex-col lg:flex-row pt-9 pb-12">
-							<div id="hero-content-book-wrapper-destination" class="xl:basis-79.5">
-								<div id="hero-content-book-wrapper-destination-heading" class="form-heading">WHERE</div>
-								<div id="hero-content-book-wrapper-destination-input" class="relative">
-									<div id="hero-content-book-wrapper-destination-input-field" class="input-field-wrapper">
-										<input type="text" placeholder="Destination">
-									</div>
-									<div id="hero-content-book-wrapper-destination-input-icon" class="input-field-img">
-										<img src="./resources/images/01_hero/hero_destination.svg" alt="hero-destination">
-									</div>
-								</div>
-							</div>
-							<div id="hero-content-book-wrapper-date" class="xl:basis-79.5 xl:ml-7.5 mt-5 lg:mt-0">
-								<div id="hero-content-book-wrapper-date-heading" class="form-heading">WHEN</div>
-								<div id="hero-content-book-wrapper-date-input" class="relative">
-									<div id="hero-content-book-wrapper-date-input-field" class="input-field-wrapper">
-										<input type="text" placeholder="Date">
-									</div>
-									<div id="hero-content-book-wrapper-date-input-icon" class="input-field-img">
-										<img src="./resources/images/01_hero/hero_date.svg" alt="hero-date">
-									</div>
-								</div>
-							</div>
-							<div id="hero-content-book-wrapper-side" class="xl:ml-7.5 flex lg:items-end lg:gap-7 lg:basis-102.5 bg-blue-400 sm:justify-between lg:justify-start gap-6 mt-5 lg:mt-0">
-								<div id="hero-content-book-wrapper-side-type" class="basis-47.5 sm:basis-3/5 lg:basis-75.5">
-									<div id="hero-content-book-wrapper-side-type-heading" class="form-heading">TOUR TYPE</div>
-									<div id="hero-content-book-wrapper-side-type-input" class="relative">
-										<div id="hero-content-book-wrapper-side-type-input-field" class="input-field-wrapper">
-											<input type="text" placeholder="Type">
+				<div class="container px-0 mt-8">
+					<div id="hero-content-book" class="p-1 mx-1.5 border-4 border-solid border-333333 rounded-30">
+						<div class="container px-0">
+							<div id="hero-content-book-wrapper" class="bg-white px-7.5 lg:px-8 flex lg:justify-between xl:justify-start lg:items-end lg:py-8 flex-col lg:flex-row pt-9 pb-12 rounded-22">
+								<div id="hero-content-book-wrapper-destination" class="xl:basis-79.5">
+									<div id="hero-content-book-wrapper-destination-heading" class="form-heading">WHERE</div>
+									<div id="hero-content-book-wrapper-destination-input" class="relative">
+										<div id="hero-content-book-wrapper-destination-input-field" class="input-field-wrapper">
+											<input type="text" placeholder="Destination">
 										</div>
-										<div id="hero-content-book-wrapper-side-type-input-icon" class="input-field-img">
-											<img src="./resources/images/01_hero/hero_type.svg" alt="hero-type">
+										<div id="hero-content-book-wrapper-destination-input-icon" class="input-field-img">
+											<img src="./resources/images/01_hero/hero_destination.svg" alt="hero-destination">
 										</div>
 									</div>
 								</div>
-								<div id="hero-content-book-wrapper-side-search" class="w-20 h-20 bg-55a85a flex items-center justify-center cursor-pointer rounded-full hover:scale-105 transition-all -mr-2 -mb-4 sm:mr-0 sm:mb-0">
-									<img src="./resources/images/01_hero/hero_search.svg" alt="hero-search">
+								<div id="hero-content-book-wrapper-date" class="xl:basis-79.5 xl:ml-7.5 mt-5 lg:mt-0">
+									<div id="hero-content-book-wrapper-date-heading" class="form-heading">WHEN</div>
+									<div id="hero-content-book-wrapper-date-input" class="relative">
+										<div id="hero-content-book-wrapper-date-input-field" class="input-field-wrapper">
+											<input type="text" placeholder="Date">
+										</div>
+										<div id="hero-content-book-wrapper-date-input-icon" class="input-field-img">
+											<img src="./resources/images/01_hero/hero_date.svg" alt="hero-date">
+										</div>
+									</div>
+								</div>
+								<div id="hero-content-book-wrapper-side" class="xl:ml-7.5 flex lg:items-end lg:gap-7 lg:basis-102.5 gap-6 sm:justify-between lg:justify-start mt-5 lg:mt-0">
+									<div id="hero-content-book-wrapper-side-type" class="basis-47.5 sm:basis-3/5 lg:basis-75.5">
+										<div id="hero-content-book-wrapper-side-type-heading" class="form-heading">TOUR TYPE</div>
+										<div id="hero-content-book-wrapper-side-type-input" class="relative">
+											<div id="hero-content-book-wrapper-side-type-input-field" class="input-field-wrapper">
+												<input type="text" placeholder="Type">
+											</div>
+											<div id="hero-content-book-wrapper-side-type-input-icon" class="input-field-img">
+												<img src="./resources/images/01_hero/hero_type.svg" alt="hero-type">
+											</div>
+										</div>
+									</div>
+									<div id="hero-content-book-wrapper-side-search" class="flex items-center justify-center flex-shrink-0 w-20 h-20 -mb-4 -mr-2 transition-all rounded-full cursor-pointer bg-55a85a hover:scale-105 sm:mb-0 sm:mr-0">
+										<img src="./resources/images/01_hero/hero_search.svg" alt="hero-search">
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="container flex justify-center">
+					<a href="#popular" id="hero-content-arr" class="px-4.5 pb-4.5 pt-5.5 border border-solid border-black border-opacity-20 rounded-full mt-10 inline-block hover:translate-y-3 transition-all">
+						<img src="./resources/images/01_hero/hero_arr.svg" alt="hero-arr-down">
+					</a>
 				</div>
 			</div>
 		</div>
