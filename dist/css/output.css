@@ -564,6 +564,42 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.destinations-container-card {
+  border-radius: 0.75rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 2rem;
+  padding-bottom: 23px;
+}
+
+.destinations-container-card-heading {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.destinations-container-card-info {
+  margin-top: 2px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.usa-thailand-tours {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  opacity: 0.53;
+}
+
+.uk-china-tours {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+  opacity: 0.516;
+}
+
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -824,20 +860,64 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: -1.25rem;
 }
 
-.-left-293 {
-  left: -1172px;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
 
-.right-293 {
-  right: 1172px;
+.-left-293 {
+  left: -1172px;
 }
 
 .-right-293 {
   right: -1172px;
+}
+
+.bottom-5\.75 {
+  bottom: 23px;
+}
+
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
+.top-18 {
+  top: 72px;
+}
+
+.-left-12 {
+  left: -3rem;
+}
+
+.-right-12 {
+  right: -3rem;
+}
+
+.bottom-39 {
+  bottom: 156px;
+}
+
+.-top-6 {
+  top: -1.5rem;
+}
+
+.left-6\.5 {
+  left: 26px;
+}
+
+.left-6 {
+  left: 1.5rem;
+}
+
+.-bottom-6 {
+  bottom: -1.5rem;
+}
+
+.right-3\.25 {
+  right: 13px;
+}
+
+.right-3 {
+  right: 0.75rem;
 }
 
 .z-40 {
@@ -858,6 +938,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .-z-10 {
   z-index: -10;
+}
+
+.-z-20 {
+  z-index: -20;
+}
+
+.-z-40 {
+  z-index: -40;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
 }
 
 .mx-1\.5 {
@@ -934,12 +1026,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 34px;
 }
 
+.mt-9\.5 {
+  margin-top: 38px;
+}
+
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
 .inline-block {
   display: inline-block;
 }
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -968,6 +1072,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .min-h-607 {
   min-height: 607px;
+}
+
+.min-h-369 {
+  min-height: 369px;
 }
 
 .w-0 {
@@ -1018,6 +1126,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1167,9 +1279,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(245 247 245 / var(--tw-bg-opacity));
 }
 
-.bg-green-600 {
+.bg-red-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -1417,6 +1529,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 1.25rem;
 }
 
+.pt-18\.5 {
+  padding-top: 74px;
+}
+
+.pb-19\.5 {
+  padding-bottom: 78px;
+}
+
+.pt-18 {
+  padding-top: 72px;
+}
+
+.pt-21\.75 {
+  padding-top: 87px;
+}
+
+.pt-22\.5 {
+  padding-top: 90px;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .font-nunito {
   font-family: 'Nunito', sans-serif;
 }
@@ -1496,7 +1632,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .opacity-50\.3 {
-  opacity: 0.503;
+  opacity: 0.53;
 }
 
 .opacity-50 {
@@ -1624,6 +1760,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     left: 10rem;
   }
 
+  .sm\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
   .sm\:mt-3 {
     margin-top: 0.75rem;
   }
@@ -1668,6 +1808,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 2rem;
   }
 
+  .sm\:mt-13\.5 {
+    margin-top: 54px;
+  }
+
+  .sm\:mt-4\.5 {
+    margin-top: 18px;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -1678,6 +1826,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:h-auto {
     height: auto;
+  }
+
+  .sm\:min-h-max {
+    min-height: -webkit-max-content;
+    min-height: -moz-max-content;
+    min-height: max-content;
   }
 
   .sm\:max-w-142\.5 {
@@ -1702,6 +1856,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-content: space-between;
   }
 
+  .sm\:gap-7\.5 {
+    gap: 30px;
+  }
+
+  .sm\:gap-7 {
+    gap: 1.75rem;
+  }
+
   .sm\:py-40 {
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -1717,6 +1879,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:pl-0 {
     padding-left: 0px;
+  }
+
+  .sm\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
+  .sm\:pt-49\.75 {
+    padding-top: 199px;
   }
 
   .sm\:text-72 {
@@ -1800,8 +1970,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     left: auto;
   }
 
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:mt-0\.5 {
+    margin-top: 2px;
   }
 
   .lg\:hidden {
@@ -1841,6 +2023,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:-translate-y-1\/2 {
     --tw-translate-y: -50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
@@ -1885,6 +2071,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-left: 2rem;
   }
 
+  .lg\:text-40 {
+    font-size: 40px;
+  }
+
+  .lg\:leading-12 {
+    line-height: 48px;
+  }
+
   .lg\:shadow-none {
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
@@ -1895,6 +2089,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1280px) {
   .xl\:-right-184\.25 {
     right: -737px;
+  }
+
+  .xl\:top-18 {
+    top: 72px;
+  }
+
+  .xl\:-left-12 {
+    left: -3rem;
+  }
+
+  .xl\:bottom-39 {
+    bottom: 156px;
+  }
+
+  .xl\:-right-12 {
+    right: -3rem;
   }
 
   .xl\:ml-7\.5 {
@@ -1911,6 +2121,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:justify-start {
     justify-content: flex-start;
+  }
+
+  .xl\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .xl\:bg-transparent {
+    background-color: transparent;
   }
 
   .xl\:pl-0 {

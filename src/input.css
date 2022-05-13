@@ -46,6 +46,26 @@
     .features-box-text {
         @apply font-nunito font-light text-xl leading-8 text-333333 opacity-50.16 mt-4 md:max-w-84.5;
     }
+
+    .destinations-container-card {
+        @apply pl-8 bg-center bg-no-repeat bg-cover pb-5.75 rounded-xl;
+    }
+
+    .destinations-container-card-heading {
+        @apply text-2xl font-bold font-big-shoulders-display;
+    }
+
+    .destinations-container-card-info {
+        @apply text-xl font-light leading-8 font-nunito mt-0.5;
+    }
+
+    .usa-thailand-tours {
+        @apply text-white opacity-50.3;
+    }
+
+    .uk-china-tours {
+        @apply text-333333 opacity-50.16;
+    }
 }
 
 #hero-nav.onscroll {
