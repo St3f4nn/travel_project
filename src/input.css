@@ -7,8 +7,16 @@
         @apply px-3.5;
     }
 
+    #hero-nav.onscroll {
+        @apply py-3.5 bg-slate-50 shadow-hero-nav-shadow z-50;
+    }
+
     .logo {
         @apply font-bold font-big-shoulders-display text-40 leading-12;
+    }
+
+    #hero-nav-menu.active {
+        @apply w-1/2;
     }
 
     .hero-nav-menu-link-el {
@@ -74,16 +82,50 @@
     .book-inner-container {
         @apply flex items-center gap-3;
     }
-}
 
-#hero-nav.onscroll {
-    padding: 14px 0;
-    background-color: whitesmoke;
-    box-shadow: -3px 0px 15px 0px #000;
-}
+    #reviews-container-card-side-left, #reviews-container-card-side-right {
+        @apply hidden bg-f5f7f5 lg:block;
+    }
 
-#hero-nav-menu.active {
-    width: 50%;
+    #reviews-container-card-main {
+        @apply shadow-reviews-card-shadow mx-7.5 sm:mx-0 relative z-0;
+    }
+
+    .reviews-container-card {
+        @apply pb-12 pt-9 sm:px-8 px-7.25 rounded-xl;
+    }
+
+    .reviews-container-card-header {
+        @apply flex justify-between;
+    }
+
+    .reviews-container-card-header-text {
+        @apply font-nunito font-light text-xl leading-8 text-333333 opacity-50.16 mt-1.25;
+    }
+
+    .reviews-container-card-rating {
+        @apply mt-9.5 flex gap-1.5;
+    }
+
+    .reviews-container-card-text {
+        @apply font-nunito font-light text-xl leading-8 text-333333 mt-6.25 max-h-295 sm:max-h-max overflow-hidden;
+    }
+
+    .reviews-container-card-customer {
+        @apply flex gap-4 mt-8;
+    }
+
+    .reviews-container-card-customer-info {
+        @apply mt-3.75;
+    }
+
+    .reviews-container-card-customer-info-name {
+        @apply text-2xl font-bold font-big-shoulders-display text-333333;
+    }
+
+    .reviews-container-card-customer-info-interest {
+        @apply font-nunito font-normal text-sm leading-6 text-333333 opacity-50.13;
+    }
 }
 
 #hero-nav-side-burger:hover .hero-nav-side-burger-line {

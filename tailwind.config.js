@@ -19,6 +19,7 @@ module.exports = {
         0.25: '1px',
         0.5: '2px',
         0.75: '3px',
+        1.25: '5px',
         1.5: '6px',
         2.25: '9px',
         3.25: '13px',
@@ -44,6 +45,7 @@ module.exports = {
         9.75: '39px',
         9.875: '39.5px',
         10.25: '41px',
+        10.5: '42px',
         11.5: '46px',
         11.75: '47px',
         13.125: '52.5px',
@@ -51,13 +53,16 @@ module.exports = {
         15.5: '62px',
         17.75: '71px',
         18: '72px',
+        18.25: '73px',
         18.5: '74px',
         19.5: '78px',
         21.75: '87px',
         22.5: '90px',
         23: '92px',
+        26.5: '106px',
         28.25: '113px',
         29.75: '119px',
+        30.5: '122px',
         39: '156px',
         40.25: '161px',
         42.5: '170px',
@@ -109,9 +114,11 @@ module.exports = {
         136.25: '545px'
       },
       boxShadow: {
+        'hero-nav-shadow': '-3px 0px 15px 0px #000',
         'account-shadow': '10px 10px 20px rgba(0, 0, 0, 0.1)',
         'menu-shadow': '-3px 0px 15px 0px #000000',
-        'card-shadow': '15px 15px 20px -10px rgba(0,0,0,0.4)'
+        'card-shadow': '15px 15px 20px -10px rgba(0,0,0,0.4)',
+        'reviews-card-shadow': '20px 20px 40px rgba(0, 0, 0, 0.2)'
       },
       borderRadius: {
         '7': '7px',
@@ -126,20 +133,26 @@ module.exports = {
         102.5: '410px'
       },
       opacity: {
+        50.13: '0.513',
         50.16: '0.516',
         50.3: '0.53'
       },
       maxWidth: {
         56.75: '227px',
         71.5: '286px',
+        76.5: '306px',
         79.25: '317px',
         84.5: '338px',
+        92.5: '370px',
         117.5: '470px',
         142.5: '570px'
       },
       minHeight: {
         '369': '369px',
         '607': '607px'
+      },
+      maxHeight: {
+        '295': '295px'
       }
     },
   },
