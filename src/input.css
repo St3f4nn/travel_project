@@ -162,8 +162,16 @@
     .blog-container-content-info-text {
         @apply font-nunito font-light text-xl leading-8 text-333333 opacity-50.16 max-w-101.5 mt-4.5 sm:mt-4;
     }
+
+    .newsletter-gallery-img {
+        @apply transition-all cursor-pointer hover:translate-y-3;
+    }
 }
 
 #hero-nav-side-burger:hover .hero-nav-side-burger-line {
     background-color: white;
+}
+
+.newsletter-header-form-control input[type="email"]::placeholder {
+    opacity: 0.516;
 }
