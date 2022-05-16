@@ -36,7 +36,7 @@
     }
 
     .input-field-wrapper input {
-        @apply focus:outline-none border border-solid border-dadada rounded-7 h-12 pl-4 pr-0.5 font-nunito font-light text-xl leading-8 text-333333 w-full;
+        @apply outline-none border border-solid border-dadada rounded-7 h-12 pl-4 pr-0.5 font-nunito font-light text-xl leading-8 text-333333 w-full hover:border-333333 focus:border-333333 transition-all;
     }
 
     .input-field-img {

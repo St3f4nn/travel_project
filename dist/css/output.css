@@ -510,11 +510,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
   --tw-text-opacity: 1;
   color: rgb(51 51 51 / var(--tw-text-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.input-field-wrapper input:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(51 51 51 / var(--tw-border-opacity));
 }
 
 .input-field-wrapper input:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(51 51 51 / var(--tw-border-opacity));
 }
 
 .input-field-img {
@@ -2165,6 +2175,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2277,6 +2292,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hover\:opacity-50:hover {
   opacity: 0.5;
+}
+
+.focus\:border-333333:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(51 51 51 / var(--tw-border-opacity));
 }
 
 .focus\:outline-none:focus {
