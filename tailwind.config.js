@@ -48,8 +48,9 @@ module.exports = {
         9.75: '39px',
         9.875: '39.5px',
         10.25: '41px',
-        10.875: '43.5px',
         10.5: '42px',
+        10.75: '43px',
+        10.875: '43.5px',
         11.5: '46px',
         11.75: '47px',
         13.125: '52.5px',
@@ -72,6 +73,7 @@ module.exports = {
         40.25: '161px',
         42.5: '170px',
         49.75: '199px',
+        55.5: '222px',
         58.5: '234px',
         59.25: '237px',
         75.5: '302px',
@@ -135,8 +137,10 @@ module.exports = {
       },
       flexBasis: {
         47.5: '190px',
+        71.5: '286px',
         75.5: '302px',
         79.5: '318px',
+        92.5: '370px',
         102.5: '410px'
       },
       opacity: {
@@ -167,7 +171,6 @@ module.exports = {
     },
   },
   plugins: [
-    require('tailwindcss-debug-screens'),
     function ({ addComponents }) {
       addComponents({
         '.container': {

@@ -88,15 +88,15 @@
     }
 
     #reviews-container-card-side-left, #reviews-container-card-side-right {
-        @apply hidden bg-f5f7f5 lg:block;
+        @apply bg-f5f7f5;
     }
 
     #reviews-container-card-main {
-        @apply shadow-card-shadow-big mx-7.5 sm:mx-0 relative;
+        @apply relative z-0 bg-white shadow-card-shadow-big;
     }
 
     .reviews-container-card {
-        @apply pb-12 pt-9 sm:px-8 px-7.25 rounded-xl xl:max-w-92.5 relative z-0;
+        @apply pb-12 pt-9 sm:px-8 px-7.25 rounded-xl flex-shrink-0 basis-71.5 sm:basis-92.5;
     }
 
     .reviews-container-card-header {
