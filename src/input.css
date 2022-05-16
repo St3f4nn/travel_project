@@ -79,12 +79,12 @@
         @apply text-333333 opacity-50.16;
     }
 
-    .book-inner-text {
-        @apply text-xl font-light leading-8 font-nunito text-333333;
-    }
-
     .book-inner-container {
         @apply flex items-center gap-3;
+    }
+
+    .book-inner-text {
+        @apply text-xl font-light leading-8 font-nunito text-333333;
     }
 
     #reviews-container-card-side-left, #reviews-container-card-side-right {
@@ -92,7 +92,7 @@
     }
 
     #reviews-container-card-main {
-        @apply shadow-reviews-card-shadow mx-7.5 sm:mx-0 relative;
+        @apply shadow-card-shadow-big mx-7.5 sm:mx-0 relative;
     }
 
     .reviews-container-card {
@@ -132,7 +132,7 @@
     }
 
     .blog-container-card {
-        @apply transition-all cursor-pointer lg:w-max hover:translate-y-1 hover:shadow-card-shadow rounded-7;
+        @apply transition-all cursor-pointer lg:w-max hover:translate-y-1 hover:shadow-card-shadow-big rounded-7;
     }
 
     .blog-container-card-img img {

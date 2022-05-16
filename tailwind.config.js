@@ -125,7 +125,7 @@ module.exports = {
         'account-shadow': '10px 10px 20px rgba(0, 0, 0, 0.1)',
         'menu-shadow': '-3px 0px 15px 0px #000000',
         'card-shadow': '15px 15px 20px -10px rgba(0,0,0,0.4)',
-        'reviews-card-shadow': '20px 20px 40px rgba(0, 0, 0, 0.2)'
+        'card-shadow-big': '20px 20px 40px rgba(0, 0, 0, 0.2)'
       },
       borderRadius: {
         '7': '7px',
