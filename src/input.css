@@ -43,6 +43,10 @@
         @apply bg-white w-10.5 h-10.5 flex items-center justify-center absolute top-1/2 -translate-y-1/2 right-0.25 rounded-7 cursor-pointer hover:scale-95 transition-all;
     }
 
+    .section-heading {
+        @apply font-bold font-big-shoulders-display text-40 leading-12 sm:text-56 sm:leading-16 text-333333;
+    }
+
     .features-box-img {
         @apply rounded-full bg-f5f7f5 w-max;
     }
@@ -88,11 +92,11 @@
     }
 
     #reviews-container-card-main {
-        @apply shadow-reviews-card-shadow mx-7.5 sm:mx-0 relative z-0;
+        @apply shadow-reviews-card-shadow mx-7.5 sm:mx-0 relative;
     }
 
     .reviews-container-card {
-        @apply pb-12 pt-9 sm:px-8 px-7.25 rounded-xl;
+        @apply pb-12 pt-9 sm:px-8 px-7.25 rounded-xl xl:max-w-92.5 relative z-0;
     }
 
     .reviews-container-card-header {
@@ -125,6 +129,38 @@
 
     .reviews-container-card-customer-info-interest {
         @apply font-nunito font-normal text-sm leading-6 text-333333 opacity-50.13;
+    }
+
+    .blog-container-card {
+        @apply h-full lg:w-max;
+    }
+
+    .blog-container-card-img img {
+        @apply w-full;
+    }
+
+    .blog-container-card-content {
+        @apply flex items-start px-6 pt-7.25 sm:px-8 sm:pt-7.25 gap-6.25 sm:gap-7.5 pb-7.75 sm:pb-8.5 rounded-b-xl bg-white;
+    }
+
+    .blog-container-card-content-box {
+        @apply rounded-md bg-55a85a w-max px-2.5 pt-2.5 pb-1.75 mt-1.75;
+    }
+
+    .blog-container-card-content-box-number {
+        @apply font-bold text-white font-big-shoulders-display text-56 leading-16;
+    }
+
+    .blog-container-card-content-box-text {
+        @apply text-xl font-light leading-8 text-center text-white font-nunito;
+    }
+
+    .blog-container-content-info-heading {
+        @apply font-big-shoulders-display font-bold text-2xl sm:text-40 sm:leading-12 text-333333
+    }
+
+    .blog-container-content-info-text {
+        @apply font-nunito font-light text-xl leading-8 text-333333 opacity-50.16 max-w-101.5 mt-4.5 sm:mt-4;
     }
 }
 
